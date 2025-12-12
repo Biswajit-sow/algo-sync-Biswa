@@ -29,4 +29,8 @@ class Solution:
                         right-=1
         return output
 
-                
+'''https://www.perplexity.ai/search/here-need-4-pointers-only-tell-eTsK8Tr8SJiB4DvyvLDkZA
+check here 
+specially for this 
+while left<right and nums[right]==nums[right+1]:
+                            right-=1'''
