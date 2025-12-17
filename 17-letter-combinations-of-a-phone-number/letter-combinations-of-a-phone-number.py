@@ -14,12 +14,11 @@ class Solution:
         }
         result=[""]
         
-        for digit in digits:
+        for digit in digits: # for digit in input
             temp=[]
-            for combination in result:
-                for letter in digit_to_letters[digit]:
-                    temp.append(combination+letter)
+            for combination in result: #for each existing combination
+                for letter in digit_to_letters[digit]: #for each letter mapped to digit
+                    temp.append(combination+letter) #combine them
             result=temp
         return result
 
-        
