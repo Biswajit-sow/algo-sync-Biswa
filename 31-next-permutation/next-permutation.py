@@ -27,3 +27,6 @@ class Solution:
         
         # Step 4: Reverse the right part from pivot+1 to end
         nums[pivot+1:] = reversed(nums[pivot+1:])
+
+        
+'''For explanation:"https://www.perplexity.ai/search/what-the-question-said-explain-_NhoV4ukRli3dCUleN9hGQ#17"'''
