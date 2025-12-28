@@ -8,8 +8,7 @@ class Solution:
             if nums[j]==nums[j-1]:
                 j+=1
                 continue
-                
-            
+            #if unique elemenyt find then
             nums[i+1]=nums[j]
             i+=1
             unique+=1
