@@ -1,7 +1,7 @@
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
         arr.sort()
-        i=1
+        
         count=1
         store=[]
         n=len(arr)
