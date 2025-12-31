@@ -1,6 +1,6 @@
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
-        
+     #using dict   
         freq={}
         for i in  arr:
             if i in freq:
@@ -13,11 +13,7 @@ class Solution:
             return True
         return False
 
-
-
-
-
-
+#brute+slightly optimized
 '''
         count=1
         store=[]
