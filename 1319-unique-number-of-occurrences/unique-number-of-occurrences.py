@@ -1,7 +1,24 @@
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
-        arr.sort()
         
+        freq={}
+        for i in  arr:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        #freq={1: 2, 2: 3}
+        freq_counts=freq.values() #freq_counts={2,3}
+        if len(set(freq_counts))==len(freq_counts):
+            return True
+        return False
+
+
+
+
+
+
+'''
         count=1
         store=[]
         n=len(arr)
@@ -18,6 +35,6 @@ class Solution:
             if store[j]==store[j-1]:
                 return False
         return True
-
+'''
         
         
