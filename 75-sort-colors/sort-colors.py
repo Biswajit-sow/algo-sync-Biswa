@@ -18,14 +18,14 @@ class Solution:
             elif i==2:
                 two+=1
          # Second pass: modify nums in-place
-        #sorted_arr = [0]*zero + [1]*one + [2]*two
+        sorted_arr = [0]*zero + [1]*one + [2]*two
 
-        for i in range(zero):
+        '''for i in range(zero):
             sorted_arr.append(0)
         for j in range(one):
             sorted_arr.append(1)
         for k in range(two):
-            sorted_arr.append(2)
+            sorted_arr.append(2)'''
         
         for i in range(len(nums)):
             nums[i] = sorted_arr[i]
