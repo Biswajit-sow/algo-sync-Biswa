@@ -3,11 +3,11 @@ class Solution:
         output=[]
         n1=len(nums1)
         n2=len(nums2)
-        copy=nums2.copy()
+        
         for i in nums1:
-            if i in copy:
+            if i in nums2:
                 output.append(i)
-                copy.remove(i)
+                nums2.remove(i) 
             else:
                 
                 continue
