@@ -1,4 +1,4 @@
-class Solution:
+'''class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         n=len(nums)
         low=0
@@ -17,9 +17,9 @@ class Solution:
             
             high+=1
         return 0 if min_len == float("inf") else min_len
+'''
 
-
-'''class Solution:
+class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         n=len(nums)
         low=0
@@ -38,5 +38,5 @@ class Solution:
             
             
         return 0 if min_len == float("inf") else min_len
-        '''
+        
         
