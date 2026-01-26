@@ -30,6 +30,8 @@ __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"
 
 
 '''
+or
+
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
         from collections import defaultdict
