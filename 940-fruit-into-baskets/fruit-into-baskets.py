@@ -21,7 +21,7 @@ class Solution:
                 if freq[fruits[low]] == 0:
                     del freq[fruits[low]]
                 low += 1
-            if len(freq)<=2:
+            if len(freq)<=2:#you may skip this line beacuse after while loop the remaining condition leave the otherwise =2 or <2 
                 current_len = high - low + 1
                 max_len = max(max_len, current_len)
         return max_len
