@@ -11,8 +11,7 @@ class Solution:
                     count+=1
                 else:
                     break 
-            if count > max_length:
-                max_length=count
+            max_length=max(max_length,count)
         return max_length
 
         
