@@ -51,7 +51,7 @@ class Solution:
         freq={}
         n=len(s)
         current_len=0
-        max_len= 0
+        max_len=  0
         
         for high in range(n):
             if s[high] in freq:
