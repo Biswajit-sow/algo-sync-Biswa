@@ -45,6 +45,8 @@ class Solution:
         return max_len
 
 '''
+
+## more cleaner optimized the above also o(n) and the below also 0(n) TC
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         low=0
