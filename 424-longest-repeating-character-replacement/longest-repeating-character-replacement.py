@@ -12,17 +12,40 @@ class Solution:
             freq[char_index]+=1
             current_len=high-low+1
             max_count = max(freq)
-            #max_count = max(max_count, freq[char_index])
+            # or max_count = max(max_count, freq[char_index])
             diff=current_len-max_count
             while(diff>k):
                 freq[ord(s[low])]-=1
                 #automatically handle frequency when o
                 low+=1
                 max_count = max(freq)
-                #max_count = max(max_count, freq[char_index])
+                # or max_count = max(max_count, freq[char_index])
                 current_len=high-low+1
                 diff=current_len-max_count
             current_len=high-low+1
             max_len=max(max_len,current_len)
         return max_len
 __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
+        
+
+'''
+    briute force
+        n = len(s)
+        max_len = 0
+        for i in range(n):
+            for j in range(i,n):
+                freq={}
+                for idex in range(i,j+1):
+                    if s[idex] in freq:
+                        freq[s[idex]] += 1
+                    else:
+                        freq[s[idex]] = 1
+                current_len=j-i+1
+                diff=current_len-max(freq.values())
+
+                if diff<=k:
+                    max_len=max(max_len,current_len)
+        return max_len
+      
+      
+'''
