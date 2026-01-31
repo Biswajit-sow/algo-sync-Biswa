@@ -12,12 +12,14 @@ class Solution:
             freq[char_index]+=1
             current_len=high-low+1
             max_count = max(freq)
+            #max_count = max(max_count, freq[char_index])
             diff=current_len-max_count
             while(diff>k):
                 freq[ord(s[low])]-=1
                 #automatically handle frequency when o
                 low+=1
                 max_count = max(freq)
+                #max_count = max(max_count, freq[char_index])
                 current_len=high-low+1
                 diff=current_len-max_count
             current_len=high-low+1
