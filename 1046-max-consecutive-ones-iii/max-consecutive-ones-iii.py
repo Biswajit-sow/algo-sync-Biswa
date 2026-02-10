@@ -19,6 +19,7 @@ class Solution:
         return max_len
     __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))    
 '''
+brute force 
         for i in range(n):
             zeroes=0
             for j in range(i,n):
