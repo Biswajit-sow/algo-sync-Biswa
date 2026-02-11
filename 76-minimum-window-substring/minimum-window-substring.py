@@ -8,15 +8,16 @@ class Solution:
             return ""
         have =[0]*256
         need= [0]*256
-        for i in range(n1):
-            char_index1=ord(t[i])
-            need[char_index1]+=1
-        
         def correct(have,need):
             for i in range(256):
                 if have[i] <need[i]:
                     return False
             return True
+        for i in range(n1):
+            char_index1=ord(t[i])
+            need[char_index1]+=1
+        
+       
 
         low = 0
         min_len = float("inf")
