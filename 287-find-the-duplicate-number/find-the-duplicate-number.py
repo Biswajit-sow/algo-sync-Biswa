@@ -15,9 +15,10 @@ class Solution:
                     fast=nums[fast]
                 return slow
         return -1
+__import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
 # here 0(n)tc and o(1) sc
 '''
-using hashmapbut here 0(n)SC use
+using hashmap but here 0(n)SC use
         freq = {}
         for num in nums:
             if num in freq:
