@@ -15,6 +15,14 @@ class Solution:
                     fast=nums[fast]
                 return slow
         return -1
+# here 0(n)tc and o(1) sc
+'''
+using hashmapbut here 0(n)SC use
+        freq = {}
+        for num in nums:
+            if num in freq:
+                return num
+            freq[num] = 1
+        return -1  # Won't reach if guaranteed duplicate
 
-
-
+        '''
