@@ -2,9 +2,18 @@ from typing import List
 
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        freq = {}
-        for num in nums:
-            if num in freq:
-                return num
-            freq[num] = 1
-        return -1  # Won't reach if guaranteed duplicate
+        slow=0
+        fast=0
+        while(True):
+            slow=nums[slow]
+            fast=nums[fast]
+            fast=nums[fast]
+            if (slow==fast):
+                slow=0
+                while(slow!=fast):
+                    slow=nums[slow]
+                    fast=nums[fast]
+                return slow
+
+
+
