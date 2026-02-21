@@ -10,6 +10,6 @@ class Solution:
             v3=max_ending*nums[i]
             max_ending=max(v1,max(v2,v3))
             min_ending=min(v1,min(v2,v3))
-            #result=max(result,max(max_ending,min_ending))
-            result=max(result,max_ending)
+            result=max(result,max(max_ending,min_ending))
+            #result=max(result,max_ending)
         return result 
