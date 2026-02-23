@@ -20,5 +20,5 @@ class Solution:
         if best_max_ans < 0:
             return best_max_ans 
         best_max_ending2 = total_sum - best_min_ans
-        result = max(result,best_max_ans, best_max_ending2)
+        result = max(best_max_ans, best_max_ending2)
         return result
