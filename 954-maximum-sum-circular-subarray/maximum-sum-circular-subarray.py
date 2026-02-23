@@ -17,7 +17,8 @@ class Solution:
 
             best_min_ending=min(prev_best_min_ending+nums[i],nums[i])
             best_min_ans=min(best_min_ans,best_min_ending)
-        
+        if best_max_ans <=0:
+            return best_max_ans 
         best_max_ending2 = total_sum - best_min_ans
         if best_max_ending2 ==0:
             return best_max_ans 
