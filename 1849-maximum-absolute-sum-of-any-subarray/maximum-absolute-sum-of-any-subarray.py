@@ -8,5 +8,5 @@ class Solution:
         for i in range(1,n):
             best_ending_max=(max(best_ending_max+nums[i],nums[i]))
             best_ending_min=(min(best_ending_min+nums[i],nums[i]))
-            result=max(result,max(abs(best_ending_min),(best_ending_max)))
+            result=max(result,max(abs(best_ending_min),abs(best_ending_max)))
         return result
