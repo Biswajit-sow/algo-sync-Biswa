@@ -19,7 +19,7 @@ class Solution:
             best_min_ans=min(best_min_ans,best_min_ending)
         
         best_max_ending2 = total_sum - best_min_ans
-        if best_max_ending <=0:
+        if best_max_ending2 ==0:
             return best_max_ans 
         result = max(best_max_ans, best_max_ending2)
         return result
