@@ -5,7 +5,6 @@ class Solution:
     
         for i in range(len(nums)):
             right_sum = total_sum - left_sum - nums[i]
-            
             if left_sum == right_sum:
                 return i
             
