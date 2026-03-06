@@ -1,4 +1,4 @@
-class Solution:
+'''class Solution:
     def checkPerfectNumber(self, num: int) -> bool:
         if num <= 1:
             return False
@@ -12,3 +12,9 @@ class Solution:
                     divisors += num // i
 
         return divisors == num
+
+'''
+
+class Solution:
+    def checkPerfectNumber(self, num: int) -> bool:
+        return num in {6, 28, 496, 8128, 33550336}
