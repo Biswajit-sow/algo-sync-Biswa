@@ -15,8 +15,8 @@ class Solution:
         while len(char_stack)!=0:
             res.append(char_stack[-1])
             char_stack.pop()
-        res.reverse()
-        return "".join(res)
+        res.reverse()# res=["c","a"]
+        return "".join(res)# res=[ca]
 __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
 
 
