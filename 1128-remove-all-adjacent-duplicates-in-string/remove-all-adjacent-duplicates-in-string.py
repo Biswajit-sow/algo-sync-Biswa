@@ -18,3 +18,16 @@ class Solution:
         res.reverse()
         return "".join(res)
 __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
+
+
+'''
+   check = []
+        for i in s:
+            if i not in check:
+                check.append(i)
+            elif i == check[-1]:
+                check.pop()
+            else:
+                check.append(i)
+        return ''.join(check)
+'''
