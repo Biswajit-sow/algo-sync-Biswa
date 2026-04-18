@@ -1,8 +1,10 @@
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
         stack=[]
+        n=len(s)
         res=""
-        for c in s:
+        for i in range(n):
+            c=s[i]
             if stack and stack[-1][0]==c:
                 stack[-1]=(c,stack[-1][1]+1)
             else:
