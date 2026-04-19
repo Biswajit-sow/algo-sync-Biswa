@@ -1,7 +1,7 @@
 class Solution:
     def minimizedStringLength(self, s: str) -> int:
-        myset=set(s)
-        n=len(myset)
-        return n
+        myset=len(set(s))
+        
+        return myset
         
         
