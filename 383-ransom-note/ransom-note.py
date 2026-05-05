@@ -14,6 +14,7 @@ class Solution:
             elif ransomNote[i] > magazine[j]:
                 j += 1
             else:
+                i+=1
                 return False
 
         return i == len(ransomNote)
