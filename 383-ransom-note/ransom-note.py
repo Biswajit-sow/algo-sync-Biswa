@@ -6,6 +6,7 @@ class Solution:
 
         return True
         '''
+        2nd way
         ransom_count = {}
         magazine_count = {}
 
@@ -29,7 +30,10 @@ class Solution:
                 return False
 
         return True
-        
+
+
+        3rd way
+
         m=len(ransomNote)
         magazine = list(magazine)   # convert to list so we can remove
         n=len(magazine)
@@ -45,7 +49,8 @@ class Solution:
 
         return True
 
-        
+
+        4th ay using two pointer 
         ransomNote = sorted(ransomNote)
         magazine = sorted(magazine)
 
