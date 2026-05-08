@@ -1,17 +1,42 @@
 class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:
 
-        freq = {}
+        # frequency of balloon
+        balloon_freq = {}
 
-        # count frequency of input string
+        for ch in "balloon":
+            balloon_freq[ch] = balloon_freq.get(ch, 0) + 1
+
+        # frequency of input string
+        text_freq = {}
+
         for ch in text:
-            freq[ch] = freq.get(ch, 0) + 1
+            text_freq[ch] = text_freq.get(ch, 0) + 1
 
-        # calculate answer
-        return min(
-            freq.get('b', 0),
-            freq.get('a', 0),
-            freq.get('l', 0) // 2,
-            freq.get('o', 0) // 2,
-            freq.get('n', 0)
-        )
+        count = 0
+
+        # repeatedly try to form "balloon"
+        while True:
+
+            can_make = True
+
+            # check every character of balloon
+            for ch in balloon_freq:
+
+                # if character not enough
+                if text_freq.get(ch, 0) < balloon_freq[ch]:
+                    can_make = False
+                    break
+
+            # if cannot form balloon anymore
+            if not can_make:
+                break
+
+            # decrease frequencies
+            for ch in balloon_freq:
+                text_freq[ch] -= balloon_freq[ch]
+
+            # one balloon formed
+            count += 1
+
+        return count
