@@ -10,14 +10,11 @@ class Solution:
             if val %2==0:#for even value
                 res+=val#
             else:
+                res+=val-1# if any char is 3 freq then res+=3-1=2 so add to and 1 remain 
                 bool_odd=True
         if bool_odd==False:
             return res 
         else:
-            for i in s_freq:
-                val=s_freq[i]
-                if val%2!=0:
-                    res+=val-1# if any char is 3 freq then res+=3-1=2 so add to and 1 remain 
             return res+1 # for odd string ----  middile 1  add 
 
 
