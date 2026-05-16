@@ -55,10 +55,10 @@ class Solution:
 
         for val in s_freq.values():
 
-            if val % 2 == 0:
+            if val % 2 == 0:# for even palindrome
                 res += val
-            else:
-                res += val - 1
+            else: # for odd palindrome
+                res += val - 1# if any char is 3 freq then res+=3-1=2 so add to and 1 remain 
                 odd_found = True
 
         if odd_found:
