@@ -20,7 +20,7 @@ class Solution:
         def last():
             n=len(nums)
             low=0
-            fast=-1
+            res=-1
             high=n-1
             
             while (low<=high):
@@ -30,7 +30,7 @@ class Solution:
                 elif nums[guess]>target:
                     high=guess-1
                 else:
-                    fast=guess
+                    res=guess
                     low=guess+1
-            return fast
+            return res
         return [first(),last()]
