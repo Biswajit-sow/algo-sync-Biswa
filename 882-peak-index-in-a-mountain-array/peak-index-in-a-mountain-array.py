@@ -1,7 +1,9 @@
 class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
+        #one way
         #max_index = arr.index(max(arr))
         #return max_index
+        #2nd way
         n=len(arr)
         low=0
         high=n-1
