@@ -13,7 +13,7 @@ class Solution:
         low=0
         high=n-1
         res=-1
-        if nums[0] <= nums[n-1]:
+        if nums[0] <= nums[n-1]:#works only because the problem guarantees:The array was originally sorted in increasing order and then rotated.
             res=nums[0]
             return res
         while(low<=high):
